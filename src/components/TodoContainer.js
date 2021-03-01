@@ -98,3 +98,19 @@ class TodoContainer extends React.Component {
 }
 
 export default TodoContainer
+
+localStorage.setItem("key", "value")
+localStorage.setItem("todos", "data")
+localStorage.getItem("key")
+localStorage.getItem("todos")
+const obj = {
+  id: 1,
+  title: "Setup development environment",
+  completed: true,
+}
+localStorage.setItem("myItem", JSON.stringify(obj))
+localStorage.getItem("myItem")
+JSON.parse(localStorage.getItem("myItem"))
+localStorage.removeItem("key")
+localStorage.removeItem("myItem")
+localStorage.clear()
