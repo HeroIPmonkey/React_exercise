@@ -6,8 +6,8 @@ const About = (props) => {
     // Then, update the return statement so you have:  
     console.log(useRouteMatch());
     return (
-        <div>
-          <ul>
+        <div className="about__content">
+          <ul className="about__list">
             <li>
               <Link to={`${url}/about-app`}>About App</Link>
             </li>
